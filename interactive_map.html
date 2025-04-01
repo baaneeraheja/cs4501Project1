@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e610dc5eb9002cc92f4d225523796903 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e610dc5eb9002cc92f4d225523796903" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e610dc5eb9002cc92f4d225523796903 = L.map(
+                "map_e610dc5eb9002cc92f4d225523796903",
+                {
+                    center: [38.094054769230766, -78.40292638461537],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3498b75077a9f933290571dd6ec36dd6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3498b75077a9f933290571dd6ec36dd6.addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+    
+            var marker_65baeb5f4e548edb32cf901383e91964 = L.marker(
+                [38.02921, -78.508736],
+                {
+}
+            ).addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+    
+            var icon_e3fc2c6f7a7c6c64a474b7613e94fd12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31fd852a90ed567838bd788512ff0873 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d08dc9d64ca1770e0e96c523f3e82a5 = $(`<div id="html_8d08dc9d64ca1770e0e96c523f3e82a5" style="width: 100.0%; height: 100.0%;">Cluster 5: 1718 Jefferson Park Ave, Charlottesville, VA 22903, USA<br>Address: 1718 Jefferson Park Ave, Charlottesville, VA 22903, USA<br>Visits: 6<br>Avg Duration: 1937.6 min<br>Range: 0.01 km</div>`)[0];
+                popup_31fd852a90ed567838bd788512ff0873.setContent(html_8d08dc9d64ca1770e0e96c523f3e82a5);
+            
+        
+
+        marker_65baeb5f4e548edb32cf901383e91964.bindPopup(popup_31fd852a90ed567838bd788512ff0873)
+        ;
+
+        
+    
+    
+                marker_65baeb5f4e548edb32cf901383e91964.setIcon(icon_e3fc2c6f7a7c6c64a474b7613e94fd12);
+            
+    
+            var circle_b8e6213ac264f243f276abd9b8169da8 = L.circle(
+                [38.02921, -78.508736],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.908784192291201, "stroke": true, "weight": 3}
+            ).addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+    
+            var marker_0a948d915f4c05983c6d281167d5a43d = L.marker(
+                [38.029899, -78.509259],
+                {
+}
+            ).addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+    
+            var icon_011b1bbbabf6fefd8345409d3d7204c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a190bb60b77f342deba63e5f99f71bd9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86abdbf7ed088f255fa8dc7fb4c6190d = $(`<div id="html_86abdbf7ed088f255fa8dc7fb4c6190d" style="width: 100.0%; height: 100.0%;">Cluster 6: 1719 US-29 BUS, Charlottesville, VA 22903, USA<br>Address: 1719 US-29 BUS, Charlottesville, VA 22903, USA<br>Visits: 5<br>Avg Duration: 1975.7 min<br>Range: 0.00 km</div>`)[0];
+                popup_a190bb60b77f342deba63e5f99f71bd9.setContent(html_86abdbf7ed088f255fa8dc7fb4c6190d);
+            
+        
+
+        marker_0a948d915f4c05983c6d281167d5a43d.bindPopup(popup_a190bb60b77f342deba63e5f99f71bd9)
+        ;
+
+        
+    
+    
+                marker_0a948d915f4c05983c6d281167d5a43d.setIcon(icon_011b1bbbabf6fefd8345409d3d7204c6);
+            
+    
+            var circle_9ad0c18e24a9c39c045f98c39960e15f = L.circle(
+                [38.029899, -78.509259],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+    
+            var marker_56759610b5dbfdf1960b7d2935939c55 = L.marker(
+                [38.033423, -78.50704350000001],
+                {
+}
+            ).addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+    
+            var icon_8d1c86712e8b6102af80901cd8df750f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b06bb52f659cad91b41acb8f86f83cd4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e86fa863cc6c627c108f83a865a390ce = $(`<div id="html_e86fa863cc6c627c108f83a865a390ce" style="width: 100.0%; height: 100.0%;">Cluster 4: Maury Hall, Charlottesville, VA 22903, USA<br>Address: Maury Hall, Charlottesville, VA 22903, USA<br>Visits: 6<br>Avg Duration: 1787.9 min<br>Range: 0.41 km</div>`)[0];
+                popup_b06bb52f659cad91b41acb8f86f83cd4.setContent(html_e86fa863cc6c627c108f83a865a390ce);
+            
+        
+
+        marker_56759610b5dbfdf1960b7d2935939c55.bindPopup(popup_b06bb52f659cad91b41acb8f86f83cd4)
+        ;
+
+        
+    
+    
+                marker_56759610b5dbfdf1960b7d2935939c55.setIcon(icon_8d1c86712e8b6102af80901cd8df750f);
+            
+    
+            var circle_997d5f1788ba1021dcf1a9a52bf43e93 = L.circle(
+                [38.033423, -78.50704350000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 413.9504220672039, "stroke": true, "weight": 3}
+            ).addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+    
+            var marker_98c5bd13f15e38f2947908c3fc29018d = L.marker(
+                [38.04162, -78.474589],
+                {
+}
+            ).addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+    
+            var icon_de01d8700a40a6bf007bb3ac3d9afe10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cbd2ac9e40c7eb4c771c2414c249446d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8b713adbc946d2ef5020e56156962e1 = $(`<div id="html_d8b713adbc946d2ef5020e56156962e1" style="width: 100.0%; height: 100.0%;">Cluster 1: 828 McIntire Rd, Charlottesville, VA 22902, USA<br>Address: 828 McIntire Rd, Charlottesville, VA 22902, USA<br>Visits: 8<br>Avg Duration: 1419.3 min<br>Range: 0.00 km</div>`)[0];
+                popup_cbd2ac9e40c7eb4c771c2414c249446d.setContent(html_d8b713adbc946d2ef5020e56156962e1);
+            
+        
+
+        marker_98c5bd13f15e38f2947908c3fc29018d.bindPopup(popup_cbd2ac9e40c7eb4c771c2414c249446d)
+        ;
+
+        
+    
+    
+                marker_98c5bd13f15e38f2947908c3fc29018d.setIcon(icon_de01d8700a40a6bf007bb3ac3d9afe10);
+            
+    
+            var circle_37d2e4a5aa77ae391847cabb7ae93ea8 = L.circle(
+                [38.04162, -78.474589],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+    
+            var marker_d629989bb85a6b92d8a4f1d8b5769fa1 = L.marker(
+                [38.041824, -78.475495],
+                {
+}
+            ).addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+    
+            var icon_337562066c2fe35e9e9179aa179b6872 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6e71a015c8e1510fca2d04eccd77f2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fcaa68612c5e896f10c49fe7507b14de = $(`<div id="html_fcaa68612c5e896f10c49fe7507b14de" style="width: 100.0%; height: 100.0%;">Cluster 2: John Warner Parkway Trailhead<br>Address: John Warner Parkway Trailhead, 828 McIntire Rd, Charlottesville, VA 22902, USA<br>Visits: 4<br>Avg Duration: 35.2 min<br>Range: 0.00 km</div>`)[0];
+                popup_c6e71a015c8e1510fca2d04eccd77f2c.setContent(html_fcaa68612c5e896f10c49fe7507b14de);
+            
+        
+
+        marker_d629989bb85a6b92d8a4f1d8b5769fa1.bindPopup(popup_c6e71a015c8e1510fca2d04eccd77f2c)
+        ;
+
+        
+    
+    
+                marker_d629989bb85a6b92d8a4f1d8b5769fa1.setIcon(icon_337562066c2fe35e9e9179aa179b6872);
+            
+    
+            var circle_1f8f0acea08c8247949e3a85475d0634 = L.circle(
+                [38.041824, -78.475495],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+    
+            var marker_41fe00a5544ea3a28adcf4fda2edb7ad = L.marker(
+                [38.031445, -78.491811],
+                {
+}
+            ).addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+    
+            var icon_3b10a06f0af2576b7a686cf187287779 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_620d15fbb890c95a64124d7b94f1c27a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e5e3cbcb26d53cc3f45e864e4fcdbae = $(`<div id="html_6e5e3cbcb26d53cc3f45e864e4fcdbae" style="width: 100.0%; height: 100.0%;">Cluster 3: 810 W Main St, Charlottesville, VA 22903, USA<br>Address: 810 W Main St, Charlottesville, VA 22903, USA<br>Visits: 3<br>Avg Duration: 26.6 min<br>Range: 0.55 km</div>`)[0];
+                popup_620d15fbb890c95a64124d7b94f1c27a.setContent(html_6e5e3cbcb26d53cc3f45e864e4fcdbae);
+            
+        
+
+        marker_41fe00a5544ea3a28adcf4fda2edb7ad.bindPopup(popup_620d15fbb890c95a64124d7b94f1c27a)
+        ;
+
+        
+    
+    
+                marker_41fe00a5544ea3a28adcf4fda2edb7ad.setIcon(icon_3b10a06f0af2576b7a686cf187287779);
+            
+    
+            var circle_e78c83506ab1092cc4e6a7880021378b = L.circle(
+                [38.031445, -78.491811],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 550.7608718569875, "stroke": true, "weight": 3}
+            ).addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+    
+            var marker_2e34bd34e0bb6fabb689961e4c033ab8 = L.marker(
+                [38.804883, -77.309673],
+                {
+}
+            ).addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+    
+            var icon_e24b3877692e103d49b4a4b148b09a8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75e23d4447d55eed2d21786161e3407e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37362e23fa03bc805b1dfd9b8226aab5 = $(`<div id="html_37362e23fa03bc805b1dfd9b8226aab5" style="width: 100.0%; height: 100.0%;">Cluster 0: 5405 Black Oak Dr, Fairfax, VA 22032, USA<br>Address: 5405 Black Oak Dr, Fairfax, VA 22032, USA<br>Visits: 3<br>Avg Duration: 2166.0 min<br>Range: 5.06 km</div>`)[0];
+                popup_75e23d4447d55eed2d21786161e3407e.setContent(html_37362e23fa03bc805b1dfd9b8226aab5);
+            
+        
+
+        marker_2e34bd34e0bb6fabb689961e4c033ab8.bindPopup(popup_75e23d4447d55eed2d21786161e3407e)
+        ;
+
+        
+    
+    
+                marker_2e34bd34e0bb6fabb689961e4c033ab8.setIcon(icon_e24b3877692e103d49b4a4b148b09a8d);
+            
+    
+            var circle_8496583a2bfd7ac0d01acc482b9b0d03 = L.circle(
+                [38.804883, -77.309673],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5057.923628280408, "stroke": true, "weight": 3}
+            ).addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+    
+            var heat_map_c30f8da80fa1dd4e40fd75743e634b4b = L.heatLayer(
+                [[38.02921, -78.508736], [38.029899, -78.509259], [38.032573, -78.505025], [38.032573, -78.505025], [38.02921, -78.508736], [38.04162, -78.474589], [38.041824, -78.475495], [38.04162, -78.474589], [38.041824, -78.475495], [38.04162, -78.474589], [38.041824, -78.475495], [38.031345, -78.498098], [38.04162, -78.474589], [38.041824, -78.475495], [38.04162, -78.474589], [38.04162, -78.474589], [38.029899, -78.509259], [38.052815, -78.501257], [38.052307, -78.501712], [38.029899, -78.509259], [38.033553, -78.507977], [38.02921, -78.508736], [38.031457, -78.491811], [38.031445, -78.491807], [38.821781, -77.320897], [38.804883, -77.307263], [38.033553, -78.507977], [38.02921, -78.508736], [38.027674, -78.465081], [38.04162, -78.474589], [38.02921, -78.508736], [38.033293, -78.511767], [38.029899, -78.509259], [38.028848, -78.48518], [38.04162, -78.474589], [38.759396, -77.309673], [38.029221, -78.508802], [38.029899, -78.509259], [38.035618, -78.50611]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_c30f8da80fa1dd4e40fd75743e634b4b.addTo(map_e610dc5eb9002cc92f4d225523796903);
+        
+</script>
+</html>
